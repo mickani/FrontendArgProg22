@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+
+<div class="form">
+    <form (ngSubmit)="crearSS()" novalidate #f="ngForm" class="form-box">
+        <h5>NEW SKILL</h5>
+        <label id="tipoTitulo" for="tipo">Tipo</label>
+        <input type="text" id="tipo" name="tipo" [(ngModel)]="tipo" disabled>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+        <br>
+        <label for="porcentaje">Porcentaje</label>
+        <input type="number" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+        <br>
+        <button class="btn btn-outline-danger btn-block" [disabled]="!f.valid">Crear</button>
+    </form>
+</div>

@@ -1,0 +1,10 @@
+<div>
+        <div class="col">
+                <div class="btnYfoto">
+                        <img class="img-fluid" [src]="banner?.banner" alt="banner">
+                        <div *ngIf="isAdmin" class="btnfoto">
+                                <app-btn-editar routerLink="/editarBanner/{{banner?.id}}" class="btn"></app-btn-editar>
+                        </div>
+                </div>
+        </div>
+</div>

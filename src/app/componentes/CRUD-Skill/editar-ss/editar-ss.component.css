@@ -1,0 +1,34 @@
+.form{
+    display: flex;
+    justify-content: center;
+}
+#crearForm{
+    margin:100px;
+ }
+.form-box{	
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background:white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.form-box input[type="text"]{
+    border: 0px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    outline: none;
+    color: orange;
+    width: 80%;
+    transition: 0.70s;
+} 
+
+button{
+    width: 30%;
+}

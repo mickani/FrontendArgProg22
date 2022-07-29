@@ -1,0 +1,127 @@
+{
+    "name": "Micaela Bossio",
+    "backImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGQ-XwxMWQOeOW3Wpb5ClxA9XRSPc9GhS4LA&usqp=CAU",
+    "foto": "/assets/img/miFoto.png",
+    "education": [
+        {
+            "level": "SECUNDARIO: ",
+            "title": "Comunicación, Arte y Diseño. ",
+            "name": "Escuela Normal Sueprior N°41. San Jorge (Sta. Fe - Argentina). ",
+            "image": "/assets/img/logoens.png",
+            "date": "(2007-2009). ",
+            "link": "https://www.facebook.com/nivelsuperiorsanjorge/"
+        },
+        {
+            "level": "TERCIARIO: ",
+            "title": "Diseñadora Gráfica y Visual. ",
+            "name": "I.E.S(Instituto de Estudios Superiores N° 9233. Santa Fe (Argentina). ",
+            "image": "/assets/img/logoies.jpg",
+            "date": "(2010-2013). ",
+            "link": "https://iessantafe.edu.ar/"
+        },
+        {
+            "level": "CURSO INTENSIVO: ",
+            "title": "Full Stack Developer Jr. ",
+            "name": "Argentina Programa. Bs. As. (Argentina). ",
+            "image": "/assets/img/logoArgProg2.png",
+            "date": "(2021-2022). ",
+            "link": "https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+        }
+    ],
+    "localityCity": "San Agustín (San Juan)",
+    "aboutMe": [
+        {
+            "title1": "Graphic Designer"
+        },
+        {
+            "title2": "Full Stack Developer Jr."
+        },
+        {
+            "description": "Soy Diseñadora Gráfica y Visual y Full Stack Developer Jr. Combinar el diseño gráfico con la programación es muy productivo ya que salen cosas muy buenas, auténticas, potenciadas y maleables. Me gustan los desafíos y estos rubros son el campo perfecto para mí porque me permiten aplicar todos mis conocimientos para experimentar soluciones, propuestas, aplicaciones,etc, y crecer en cada avance tecnológico donde las demandas y adaptaciones crecen cada día, en cada producto que se crea y consume."
+        }
+    ],
+    "workExperience": [
+        {
+            "company": "New Age: ",
+            "link": "https://www.youtube.com/watch?v=0PBFg8eFmQc",
+            "image": "/assets/img/new-age-comp.png",
+            "work": "Imagen Corporativa y creación de Logotipo.",
+            "position": "Diseñadora Gráfica, producción visual y audiovisual",
+            "mode": "Jornada Parcial",
+            "description": "Diseño Gráfico, publicidad, producción visual y audiovisual, redes sociales.",
+            "start": "03/2013 ",
+            "end": " 03/2015"
+        },
+        {
+            "company": "Cracco: ",
+            "link":"https://www.facebook.com/pastascracco/videos/1744431615847542/",
+            "image": "/assets/img/logoDeCracco.png",
+            "work": "Imagen Corporativa y mejoras en logotipo",
+            "position": "Diseñadora Gráfica, producción visual y audiovisual, atención cliente",
+            "mode": "Jornada Completa",
+            "description": "Rediseño de logotipo, producción visual y audiovisual, publicidad, redes sociales, alcance clientes, ventas.",
+            "start": "  01/2016 ",
+            "end": " 01/2019"
+        },
+        {
+            "company": "Incogniti.Diseños (empresa personal)",
+            "link":"https://www.facebook.com/IncognitiDisenos",
+            "image": "/assets/img/logoIncogniti.png",
+            "work": "Diseños, videos, creación, producción",
+            "position": "Diseñadora Gráfica, producción visual y audiovisual",
+            "mode": "Jornada Completa",
+            "description": "Diseño de logos, tarjetas, páginas. Montajes. Videos de fotos, publicitarios, informativos. Creación, producción y armado de trabajos encargados.",
+            "start": "12/2014 ",
+            "end": " actualidad"
+        }
+    ],
+    "hardSkills": [
+        {
+            "name": "D.Gráfico",
+            "porcent": 100
+        },
+        {
+            "name": "Redes S.",
+            "porcent": 90
+        },
+        {
+            "name": "HTML",
+            "porcent": 95
+        },
+        {
+            "name": "CSS",
+            "porcent": 90
+        },
+        {
+            "name": "JS",
+            "porcent": 75
+        }
+    ],
+    "softSkill": [
+        {
+            "name": "Comunicación",
+            "porcent": 94
+        },
+        {
+            "name": "T.en Equipo",
+            "porcent": 80
+        },
+        {
+            "name": "Creatividad",
+            "porcent": 90
+        },
+        {
+            "name": "Resolución",
+            "porcent": 90
+        }
+    ],
+    "proyects":[
+        {
+            "image": "/assets/img/miPortfolio.png",
+            "name": "Portfolio",
+            "date": "2022",
+            "description": "Portfolio personal. Perfil laboral, proyecyos, experiencias, etc.",
+            "link": "#"
+        }
+    ]
+}

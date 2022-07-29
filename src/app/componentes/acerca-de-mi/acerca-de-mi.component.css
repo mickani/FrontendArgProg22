@@ -1,0 +1,49 @@
+.row {
+    background-color: #FFF5E1;
+    margin: 0 2px;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.btnYfoto{
+    margin-bottom: 10px;
+}
+.btnfoto{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    color: white;   
+}
+img {
+    margin: 10px;
+    border-radius: 100%;
+    box-shadow: black 0px 0px 10px;
+}
+.btnTexto{
+    display: flex;
+    justify-content: end;
+    padding-top:5px ;
+}
+.estiloTexto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h4 {
+    color: #470D21;
+}
+@media (max-width: 759px) {
+    .acercDeMi{
+        display: flex;
+        align-items: center;
+    }
+    img {
+        width: 80%;
+        border-radius: 100%;
+    }
+    #estiloMediaH4 {
+        font-size: 15px;
+    }
+    #estiloMediaP{
+        font-size: 12px;
+    }
+}

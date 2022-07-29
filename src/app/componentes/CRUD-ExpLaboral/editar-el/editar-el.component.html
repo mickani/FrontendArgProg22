@@ -1,0 +1,16 @@
+<app-menu></app-menu>
+
+<div class="form">
+    <form class="form-box">
+        <label for="empresa">Empresa</label>
+        <input type="text" id="empresa" name="empresa" [(ngModel)]="expLaboral.empresa">
+        <br>
+        <label for="periodo">Periodo</label>
+        <input type="text" id="periodo" name="periodo" [(ngModel)]="expLaboral.periodo">
+        <br>
+        <label for="descripcion">Descripcion</label>
+        <input type="text" id="descripcion" name="descripcion" [(ngModel)]="expLaboral.descripcion">
+        <br>
+        <button (click)="guardar()" class="btn btn-outline-danger btn-block">Modificar</button>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="table-responsive">
+        <h5>...EDUCACIÓN...</h5>
+        <app-btn-agregar *ngIf="isAdmin" routerLink="/crear" class="btnAgregar"></app-btn-agregar>
+        <br>
+        <div class="col h6Div">
+            <h6><b>N.EDUCATIVO</b></h6>
+            <h6><b>FECHA</b></h6>
+            <h6><b>TÍTULO/INSTITUCIÓN</b></h6>
+        </div>
+        <table *ngFor="let educ of educacion" class="table table-hover align-middle margin font">
+            <thead>
+            </thead>
+            <tr>
+                <td class="col-3">
+                    <app-btn-editar *ngIf="isAdmin" routerLink="/editar/{{educ.id}}"></app-btn-editar>
+                    <app-btn-delete *ngIf="isAdmin" (click)="borrar(educ.id)"></app-btn-delete>
+                    <p>{{educ?.nivelInstitucion}}</p>
+                </td>
+                <td class="col-3">
+                    <p>{{educ?.fecha}}</p>
+                </td>
+                <td class="col-3 align-top">
+                    <p><i>{{educ?.titulo}}</i></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

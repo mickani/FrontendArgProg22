@@ -1,0 +1,19 @@
+<div class="row acercDeMi">
+    <app-btn-editar *ngIf="isAdmin" routerLink="/editarDescripc/{{persona?.id}}" class="btnTexto"></app-btn-editar>
+    <div class="col">
+        <div class="btnYfoto">
+            <img class="img-fluid" [src]="persona?.image_perfil" alt="fotoPersonal">
+            <div *ngIf="isAdmin" class="btnfoto">
+                <app-btn-editar routerLink="/editarFoto/{{persona?.id}}"></app-btn-editar>
+            </div>
+        </div>
+    </div>
+    <div class="col estiloTexto">
+        <h4 name="nombreCompleto" id="estiloMediaH4"><b>{{persona?.nombre}} {{persona?.apellido}}</b></h4>
+        <p id="estiloMediaP"><b>{{persona?.titulo}}</b></p>
+    </div>
+    <div class="col-7 estiloTexto">
+        <h4 id="estiloMediaH4">Acerca de mí...</h4>
+        <p id="estiloMediaP">{{persona?.descripcion}}</p>
+    </div>
+</div>

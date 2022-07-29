@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="table-responsive expLab">
+        <h5>...EXPERIENCIA LABORAL...</h5>
+        <app-btn-agregar *ngIf="isAdmin" routerLink="/crearEL" class="btnAgregar"></app-btn-agregar>
+        <br>
+        <div class="col titulos">
+            <h6><b>EMPRESA</b></h6>
+            <h6><b>PERÍODO</b></h6>
+            <h6><b>TAREAS</b></h6>
+        </div>
+        <table *ngFor="let trabajo of expLaboral" class="table table-hover align-middle font">
+            <thead>
+            </thead>
+            <tr>
+                <td class="col-3">
+                    <app-btn-editar *ngIf="isAdmin" routerLink="/editarEL/{{trabajo.id}}"></app-btn-editar>
+                    <app-btn-delete *ngIf="isAdmin" (click)="borrarEL(trabajo.id)"></app-btn-delete>
+                    <p><b>{{trabajo?.empresa}}</b></p>
+                </td>
+                <td class="col-3">
+                    <p>({{trabajo?.periodo}})</p>
+                </td>
+                <td class="col-3 align-top">
+                    <p><i>{{trabajo?.descripcion}}</i></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

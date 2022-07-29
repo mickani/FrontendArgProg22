@@ -1,0 +1,36 @@
+.row{
+    background-color: white;
+    margin: 0 2px;
+    border-radius: 10px;
+}
+.btnAgregar{
+    display: flex;
+    justify-content: center;
+}
+.btnEditar{
+    margin-right: 8px;
+}
+.btnHard{
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+.btnSoft{
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+h5 {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+h6{
+    text-align: center;
+    color: #323232;
+}
+.margin {
+    margin-right: 9px;
+}

@@ -1,0 +1,33 @@
+.row{
+    margin: 0 2px;
+    border-radius: 10px;
+    background-color:#FCFFE7;
+}
+ul{
+    margin-left: 10px;
+}
+.btnAgregar{
+    display: flex;
+    justify-content: center;
+}
+.btnEdit{
+    margin-right: 8px;
+}
+h5{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+h6{
+    color: #F66B0E;
+}
+hr{
+    width: 95%;
+}
+img{
+    border: 1px solid black;
+    width: 50%;
+}

@@ -1,0 +1,50 @@
+.row {
+    background-color: #F9EBC8;
+    margin: 0 2px;
+    border-radius: 10px;
+}
+.table-responsive{
+     margin: 0 5px;
+}
+
+.btnAgregar {
+    display: flex;
+    justify-content: center;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.h6Div{
+    display: flex;
+    justify-content: space-between;
+    color: #F66B0E;
+    margin: 0 5px;
+
+}
+.font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* .margin {
+    margin: 20px 5px;
+} */
+
+@media (max-width: 759px) {
+    h5 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    h6 {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

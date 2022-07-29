@@ -1,0 +1,15 @@
+<app-menu></app-menu>
+<div id="loginForm" class="form">
+    <form (ngSubmit)="crear()" novalidate #f="ngForm" class="form-box">
+        <label for="nivelInstitucion">Nivel e Institucion</label>
+        <input type="text" id="nivelInstitucion" name="nivelInstitucion" [(ngModel)]="nivelInstitucion" required>
+        <br>
+        <label for="fecha">Fecha</label>
+        <input type="text" id="fecha" name="fecha" [(ngModel)]="fecha" required>
+        <br>
+        <label for="titulo">Titulo</label>
+        <input type="text" id="titulo" name="titulo" [(ngModel)]="titulo" required>
+        <br>
+        <button class="btn btn-outline-danger btn-block" [disabled]="!f.valid">Crear</button>
+    </form>
+</div>

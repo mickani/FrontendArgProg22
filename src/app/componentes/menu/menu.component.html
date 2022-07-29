@@ -1,0 +1,22 @@
+  <nav>
+    <div class="col">
+      <img id="logoArgProg" src="../assets/img/logoArgProg.png" alt="logo">
+    </div>
+
+    <div class="col" id="redesSoc">
+      <a class="fb" href="https://www.facebook.com/Mickaelapom/" target="..."><i
+          class="fab fa-facebook fa-2x color"></i>
+      </a>
+      <a href="https://outlook.live.com/owa/0/?state=1&redirectTo=aHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC9qdW5rZW1haWwv"
+        target="..."><i class="far fa-envelope fa-2x color"></i>
+      </a>
+      <a href="https://web.whatsapp.com/" target="..."><i class="fab fa-whatsapp fa-2x color"></i>
+      </a>
+    </div>
+    <div id="c">
+    <a *ngIf="isLogged" routerLink="/home"><i class="fas fa-home"></i> Inicio</a>
+      <a *ngIf="!isLogged" routerLink="/login"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a>
+      <a *ngIf="isLogged" routerLink="/mgBienvenido" (click)="onLogOut()"><i class="fas fa-times-circle"></i> Cerrar Sesión</a>
+    </div>
+  </nav>
+

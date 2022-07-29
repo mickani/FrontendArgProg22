@@ -1,0 +1,19 @@
+<!-- SOFT -->
+<div class="row skills">
+
+    <hr>
+    <app-btn-agregar *ngIf="isAdmin" routerLink="/crearSS" class="btnAgregar"></app-btn-agregar>
+    <br>
+    <div *ngFor="let skill of softskills" class="col-xs-12 col-sm-3 margin text-center">
+        <h6><b><i>.{{skill?.tipo}}.</i></b></h6>
+        <div *ngIf="isAdmin" class="btnHard">
+            <app-btn-editar routerLink="/editarSS/{{skill.id}}" class="btnEditar"></app-btn-editar>
+            <app-btn-delete (click)="borrarSS(skill.id)"></app-btn-delete>
+        </div>
+        <circle-progress title="{{skill?.nombre}}" [showSubtitle]="false" [titleColor]="'black'"
+            [percent]="skill?.porcentaje" [showUnits]="false" [radius]="70" [outerStrokeWidth]="8"
+            [innerStrokeWidth]="10" [outerStrokeColor]="'#0093AB'" [innerStrokeColor]="'#95D1CC'" [animation]="true"
+            [animationDuration]="300">
+        </circle-progress>
+    </div>
+</div>

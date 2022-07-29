@@ -1,0 +1,20 @@
+<div class="row skills">
+  <h5>...SKILLS...</h5>
+  <br>
+  <!-- HARD -->
+  <hr>
+  <app-btn-agregar *ngIf="isAdmin" class="btnAgregar" routerLink="/crearHS"></app-btn-agregar>
+  <br>
+  <div *ngFor="let skill of hardskills" class="col-xs-12 col-sm-3 margin text-center">
+    <h6><b><i>.{{skill?.tipo}}.</i></b></h6>
+    <div *ngIf="isAdmin" class="btnHard">
+      <app-btn-editar class="btnEditar" routerLink="/editarHS/{{skill.id}}"></app-btn-editar>
+      <app-btn-delete (click)="borrarHS(skill.id)"></app-btn-delete>
+    </div>
+    <circle-progress title="{{skill?.nombre}}" [showSubtitle]="false" [titleColor]="'black'" [percent]="skill?.porcentaje"
+      [showUnits]="false" [radius]="70" [outerStrokeWidth]="8" [innerStrokeWidth]="10" [outerStrokeColor]="'#B22727'"
+      [innerStrokeColor]="'#F8CB2E'" [animation]="true" [animationDuration]="300">
+    </circle-progress>
+  </div>
+  <app-skills-soft></app-skills-soft>
+</div>

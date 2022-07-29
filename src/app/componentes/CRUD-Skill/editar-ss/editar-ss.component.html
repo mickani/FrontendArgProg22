@@ -1,0 +1,16 @@
+<app-menu></app-menu>
+
+<div class="form">
+    <form class="form-box">
+        <label for="tipo">Tipo</label>
+        <input type="text" id="tipo" name="tipo" [(ngModel)]="softSkill.tipo" disabled>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="softSkill.nombre">
+        <br>
+        <label for="porcentaje">Porcentaje</label>
+        <input type="text" id="porcentaje" name="porcentaje" [(ngModel)]="softSkill.porcentaje">
+        <br>
+        <button (click)="guardar()" class="btn btn-outline-danger btn-block">Modificar</button>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+<div class="row">
+    <h5>...PROYECTOS...</h5>
+    <app-btn-agregar *ngIf="isAdmin" routerLink="/crearProyecto" class="btnAgregar"></app-btn-agregar>
+    <ul *ngFor="let proyecto of proyectos">
+        <li class="col-xs-12 col-sm-4">
+            <hr>
+            <app-btn-editar *ngIf="isAdmin" routerLink="/editarProyecto/{{proyecto.id}}" class="btnEdit"></app-btn-editar>
+            <app-btn-delete *ngIf="isAdmin" (click)="borrarProyecto(proyecto.id)"></app-btn-delete>
+            <h6>{{proyecto?.nombre}}</h6>
+            <p>{{(proyecto?.fecha)}}</p>
+            <p>{{proyecto?.descripcion}}</p>
+            <a [href]="proyecto?.link" target="..."><img [src]="proyecto?.imagen"></a>
+        </li>
+    </ul>
+</div>
