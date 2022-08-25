@@ -10,6 +10,7 @@ import { SoftSkill } from '../model/softSkill.model';
 
 export class SkillsSoftService {
   url = 'https://murmuring-oasis-35626.herokuapp.com/api/';
+  // url = 'http://localhost:8080/api/';
 
   constructor(private http: HttpClient) { }
 

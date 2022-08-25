@@ -9,6 +9,7 @@ import { Educacion } from '../model/educacion.model';
 
 export class EducacionService {
   url='https://murmuring-oasis-35626.herokuapp.com/api/education/';
+  // url = 'http://localhost:8080/api/education/';
 
   constructor(private http: HttpClient) { }
 

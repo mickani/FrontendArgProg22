@@ -10,6 +10,7 @@ import { Skill } from '../model/skill.model';
 export class SkillsService {
 
   url='https://murmuring-oasis-35626.herokuapp.com/api/';
+  // url='http://localhost:8080/api/';
 
   constructor(private http: HttpClient) { }
 
