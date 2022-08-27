@@ -8,8 +8,7 @@ import { Proyecto } from '../model/proyecto.model';
 })
 
 export class ProyectoService {
-  url='https://murmuring-oasis-35626.herokuapp.com/api/proyecto/';
-  // url='http://localhost:8080/api/proyecto/';
+  url='https://backheroku22.herokuapp.com/api/proyecto/';
 
   constructor(private http: HttpClient) { }
 

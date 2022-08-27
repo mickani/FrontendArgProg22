@@ -7,8 +7,7 @@ import { Persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  url='https://murmuring-oasis-35626.herokuapp.com/api/persona/';
-  // url='http://localhost:8080/api/persona/';
+  url='https://backheroku22.herokuapp.com/api/persona/';
 
   constructor(private http: HttpClient) { }
 

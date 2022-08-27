@@ -10,8 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-  authURL = 'https://murmuring-oasis-35626.herokuapp.com/auth/';
-  // authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://backheroku22.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

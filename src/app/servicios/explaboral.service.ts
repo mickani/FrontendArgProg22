@@ -8,8 +8,7 @@ import { ExpLaboral } from '../model/explaboral.model';
 })
 
 export class ExplaboralService {
-  url='https://murmuring-oasis-35626.herokuapp.com/api/explaboral/';
-  // url = 'http://localhost:8080/api/explaboral/';
+  url='https://backheroku22.herokuapp.com/api/explaboral/';
 
   constructor(private http: HttpClient) { }
 
