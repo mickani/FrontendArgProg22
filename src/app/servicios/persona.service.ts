@@ -8,6 +8,8 @@ import { Persona } from '../model/persona.model';
 })
 export class PersonaService {
   url='https://backheroku22.herokuapp.com/api/persona/';
+  // url='http://localhost:8080/api/persona/';
+
 
   constructor(private http: HttpClient) { }
 

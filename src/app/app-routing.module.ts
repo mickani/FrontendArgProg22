@@ -36,19 +36,15 @@ const routes: Routes = [
   // EDUCACIÓN
   { path: 'crear', component: CrearComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
   { path: 'editar/:id', component: EditarComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
-  // { path: 'eliminar/:id', component: EliminarComponent },
   // EXP. LABORAL
   { path: 'crearEL', component: CrearELComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
   { path: 'editarEL/:id', component: EditarELComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
-  // { path: 'eliminarEL/:id', component: EliminarELComponent },
   // HARD SKILL
   { path: 'crearHS', component: CrearHsComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
   { path: 'editarHS/:id', component: EditarHsComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
-  // { path: 'eliminarHS/:id', component: EliminarHsComponent },
   // SOFT SKILL
   { path: 'crearSS', component: CrearSsComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
   { path: 'editarSS/:id', component: EditarSsComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
-  // { path: 'eliminarSS/:id', component: EliminarSsComponent },
   // PROYECTO
   { path: 'crearProyecto', component: CrearProyComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
   { path: 'editarProyecto/:id', component: EditarProyComponent, canActivate: [guard], data: {expectedRol: ['admin']} },
@@ -56,7 +52,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
   // si x error se pasa una ruta q no existe, redirecciona a pag inexistente. 
   { path: 'pagInexistente', component: PagInexistenteComponent },
-  { path: '**', redirectTo: '/pagInexistente'},
+  { path: '**', redirectTo: '/pagInexistente', pathMatch: 'full' },
 ];
 
 @NgModule({
